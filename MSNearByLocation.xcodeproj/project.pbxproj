@@ -1,0 +1,490 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF434C391FB20BA600CA151D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF434C381FB20BA600CA151D /* CoreLocation.framework */; };
+		EF71F3401FB1F94B00D68009 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EF71F33F1FB1F94B00D68009 /* main.m */; };
+		EF71F3431FB1F94B00D68009 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF71F3421FB1F94B00D68009 /* AppDelegate.m */; };
+		EF71F3461FB1F94B00D68009 /* MSLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF71F3451FB1F94B00D68009 /* MSLocationViewController.m */; };
+		EF71F3491FB1F94B00D68009 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF71F3471FB1F94B00D68009 /* Main.storyboard */; };
+		EF71F34B1FB1F94B00D68009 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF71F34A1FB1F94B00D68009 /* Assets.xcassets */; };
+		EF71F34E1FB1F94B00D68009 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF71F34C1FB1F94B00D68009 /* LaunchScreen.storyboard */; };
+		EF71F3691FB202C500D68009 /* MSLocationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EF71F3671FB202C500D68009 /* MSLocationTableViewCell.m */; };
+		EF71F36A1FB202C500D68009 /* MSLocationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF71F3681FB202C500D68009 /* MSLocationTableViewCell.xib */; };
+		EF71F36E1FB2031E00D68009 /* MSNearbyLocationDataService.m in Sources */ = {isa = PBXBuildFile; fileRef = EF71F36D1FB2031E00D68009 /* MSNearbyLocationDataService.m */; };
+		EF71F3711FB2033300D68009 /* MSNearbyLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = EF71F3701FB2033300D68009 /* MSNearbyLocation.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF71F3551FB1F94B00D68009 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF71F3331FB1F94B00D68009 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF71F33A1FB1F94B00D68009;
+			remoteInfo = MSNearByLocation;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EF434C381FB20BA600CA151D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		EF71F33B1FB1F94B00D68009 /* MSNearByLocation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MSNearByLocation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF71F33F1FB1F94B00D68009 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EF71F3411FB1F94B00D68009 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EF71F3421FB1F94B00D68009 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EF71F3441FB1F94B00D68009 /* MSLocationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSLocationViewController.h; sourceTree = "<group>"; };
+		EF71F3451FB1F94B00D68009 /* MSLocationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSLocationViewController.m; sourceTree = "<group>"; };
+		EF71F3481FB1F94B00D68009 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EF71F34A1FB1F94B00D68009 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF71F34D1FB1F94B00D68009 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EF71F34F1FB1F94B00D68009 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF71F3541FB1F94B00D68009 /* MSNearByLocationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MSNearByLocationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF71F3661FB202C500D68009 /* MSLocationTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSLocationTableViewCell.h; sourceTree = "<group>"; };
+		EF71F3671FB202C500D68009 /* MSLocationTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSLocationTableViewCell.m; sourceTree = "<group>"; };
+		EF71F3681FB202C500D68009 /* MSLocationTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MSLocationTableViewCell.xib; sourceTree = "<group>"; };
+		EF71F36C1FB2031E00D68009 /* MSNearbyLocationDataService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSNearbyLocationDataService.h; sourceTree = "<group>"; };
+		EF71F36D1FB2031E00D68009 /* MSNearbyLocationDataService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSNearbyLocationDataService.m; sourceTree = "<group>"; };
+		EF71F36F1FB2033300D68009 /* MSNearbyLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSNearbyLocation.h; sourceTree = "<group>"; };
+		EF71F3701FB2033300D68009 /* MSNearbyLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSNearbyLocation.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF71F3381FB1F94B00D68009 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF434C391FB20BA600CA151D /* CoreLocation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF71F3511FB1F94B00D68009 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF434C351FB20AFB00CA151D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EF434C381FB20BA600CA151D /* CoreLocation.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF71F3321FB1F94B00D68009 = {
+			isa = PBXGroup;
+			children = (
+				EF71F33D1FB1F94B00D68009 /* MSNearByLocation */,
+				EF434C351FB20AFB00CA151D /* Frameworks */,
+				EF71F33C1FB1F94B00D68009 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF71F33C1FB1F94B00D68009 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF71F33B1FB1F94B00D68009 /* MSNearByLocation.app */,
+				EF71F3541FB1F94B00D68009 /* MSNearByLocationTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF71F33D1FB1F94B00D68009 /* MSNearByLocation */ = {
+			isa = PBXGroup;
+			children = (
+				EF71F3411FB1F94B00D68009 /* AppDelegate.h */,
+				EF71F3421FB1F94B00D68009 /* AppDelegate.m */,
+				EF71F3651FB2029A00D68009 /* ViewControllers */,
+				EF71F3641FB2028B00D68009 /* Views */,
+				EF71F3631FB2027F00D68009 /* Models */,
+				EF71F36B1FB202F800D68009 /* Data Services */,
+				EF71F3471FB1F94B00D68009 /* Main.storyboard */,
+				EF71F34A1FB1F94B00D68009 /* Assets.xcassets */,
+				EF71F34C1FB1F94B00D68009 /* LaunchScreen.storyboard */,
+				EF71F34F1FB1F94B00D68009 /* Info.plist */,
+				EF71F33E1FB1F94B00D68009 /* Supporting Files */,
+			);
+			path = MSNearByLocation;
+			sourceTree = "<group>";
+		};
+		EF71F33E1FB1F94B00D68009 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EF71F33F1FB1F94B00D68009 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EF71F3631FB2027F00D68009 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EF71F36F1FB2033300D68009 /* MSNearbyLocation.h */,
+				EF71F3701FB2033300D68009 /* MSNearbyLocation.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		EF71F3641FB2028B00D68009 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EF71F3661FB202C500D68009 /* MSLocationTableViewCell.h */,
+				EF71F3671FB202C500D68009 /* MSLocationTableViewCell.m */,
+				EF71F3681FB202C500D68009 /* MSLocationTableViewCell.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		EF71F3651FB2029A00D68009 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				EF71F3441FB1F94B00D68009 /* MSLocationViewController.h */,
+				EF71F3451FB1F94B00D68009 /* MSLocationViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		EF71F36B1FB202F800D68009 /* Data Services */ = {
+			isa = PBXGroup;
+			children = (
+				EF71F36C1FB2031E00D68009 /* MSNearbyLocationDataService.h */,
+				EF71F36D1FB2031E00D68009 /* MSNearbyLocationDataService.m */,
+			);
+			name = "Data Services";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF71F33A1FB1F94B00D68009 /* MSNearByLocation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF71F35D1FB1F94B00D68009 /* Build configuration list for PBXNativeTarget "MSNearByLocation" */;
+			buildPhases = (
+				EF71F3371FB1F94B00D68009 /* Sources */,
+				EF71F3381FB1F94B00D68009 /* Frameworks */,
+				EF71F3391FB1F94B00D68009 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MSNearByLocation;
+			productName = MSNearByLocation;
+			productReference = EF71F33B1FB1F94B00D68009 /* MSNearByLocation.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EF71F3531FB1F94B00D68009 /* MSNearByLocationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF71F3601FB1F94B00D68009 /* Build configuration list for PBXNativeTarget "MSNearByLocationTests" */;
+			buildPhases = (
+				EF71F3501FB1F94B00D68009 /* Sources */,
+				EF71F3511FB1F94B00D68009 /* Frameworks */,
+				EF71F3521FB1F94B00D68009 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF71F3561FB1F94B00D68009 /* PBXTargetDependency */,
+			);
+			name = MSNearByLocationTests;
+			productName = MSNearByLocationTests;
+			productReference = EF71F3541FB1F94B00D68009 /* MSNearByLocationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF71F3331FB1F94B00D68009 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Masud Shuvo";
+				TargetAttributes = {
+					EF71F33A1FB1F94B00D68009 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = PPYPDKC5SV;
+						ProvisioningStyle = Automatic;
+					};
+					EF71F3531FB1F94B00D68009 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EF71F33A1FB1F94B00D68009;
+					};
+				};
+			};
+			buildConfigurationList = EF71F3361FB1F94B00D68009 /* Build configuration list for PBXProject "MSNearByLocation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF71F3321FB1F94B00D68009;
+			productRefGroup = EF71F33C1FB1F94B00D68009 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF71F33A1FB1F94B00D68009 /* MSNearByLocation */,
+				EF71F3531FB1F94B00D68009 /* MSNearByLocationTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF71F3391FB1F94B00D68009 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF71F34E1FB1F94B00D68009 /* LaunchScreen.storyboard in Resources */,
+				EF71F36A1FB202C500D68009 /* MSLocationTableViewCell.xib in Resources */,
+				EF71F34B1FB1F94B00D68009 /* Assets.xcassets in Resources */,
+				EF71F3491FB1F94B00D68009 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF71F3521FB1F94B00D68009 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF71F3371FB1F94B00D68009 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF71F36E1FB2031E00D68009 /* MSNearbyLocationDataService.m in Sources */,
+				EF71F3711FB2033300D68009 /* MSNearbyLocation.m in Sources */,
+				EF71F3461FB1F94B00D68009 /* MSLocationViewController.m in Sources */,
+				EF71F3691FB202C500D68009 /* MSLocationTableViewCell.m in Sources */,
+				EF71F3431FB1F94B00D68009 /* AppDelegate.m in Sources */,
+				EF71F3401FB1F94B00D68009 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF71F3501FB1F94B00D68009 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF71F3561FB1F94B00D68009 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF71F33A1FB1F94B00D68009 /* MSNearByLocation */;
+			targetProxy = EF71F3551FB1F94B00D68009 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EF71F3471FB1F94B00D68009 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF71F3481FB1F94B00D68009 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EF71F34C1FB1F94B00D68009 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF71F34D1FB1F94B00D68009 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF71F35B1FB1F94B00D68009 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EF71F35C1FB1F94B00D68009 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF71F35E1FB1F94B00D68009 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PPYPDKC5SV;
+				INFOPLIST_FILE = MSNearByLocation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.location;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Debug;
+		};
+		EF71F35F1FB1F94B00D68009 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PPYPDKC5SV;
+				INFOPLIST_FILE = MSNearByLocation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.location;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Release;
+		};
+		EF71F3611FB1F94B00D68009 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MSNearByLocationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.nearbylocation.MSNearByLocationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MSNearByLocation.app/MSNearByLocation";
+			};
+			name = Debug;
+		};
+		EF71F3621FB1F94B00D68009 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MSNearByLocationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.nearbylocation.MSNearByLocationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MSNearByLocation.app/MSNearByLocation";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF71F3361FB1F94B00D68009 /* Build configuration list for PBXProject "MSNearByLocation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF71F35B1FB1F94B00D68009 /* Debug */,
+				EF71F35C1FB1F94B00D68009 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF71F35D1FB1F94B00D68009 /* Build configuration list for PBXNativeTarget "MSNearByLocation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF71F35E1FB1F94B00D68009 /* Debug */,
+				EF71F35F1FB1F94B00D68009 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF71F3601FB1F94B00D68009 /* Build configuration list for PBXNativeTarget "MSNearByLocationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF71F3611FB1F94B00D68009 /* Debug */,
+				EF71F3621FB1F94B00D68009 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF71F3331FB1F94B00D68009 /* Project object */;
+}
