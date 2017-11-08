@@ -14,8 +14,8 @@
 
 @interface MSLocationViewController () <MKMapViewDelegate, CLLocationManagerDelegate>
 
-@property (nonatomic, weak) IBOutlet UILabel *accuracyLabel;
-@property (nonatomic, weak) IBOutlet UILabel *locationListLabel;
+@property (nonatomic, strong) IBOutlet UILabel *accuracyLabel;
+@property (nonatomic, strong) IBOutlet UILabel *locationListLabel;
 @property (nonatomic, strong) CLLocation *currentLocation;
 @property (nonatomic, strong) CLLocation *selectedLocation;
 @property (nonatomic, strong) MKPointAnnotation *point;
@@ -76,11 +76,11 @@
     self.region = MKCoordinateRegionMakeWithDistance(touchMapCoordinate, 800, 800);
     [self.mapView setRegion:[self.mapView regionThatFits:self.region] animated:YES];
     self.isCurrentLocation = NO;
-    [self loadNearbyLocationsForLatitude:touchMapCoordinate.latitude andLongitude:touchMapCoordinate.longitude searchString:nil];
+    [self loadNearbyLocationsForLatitude:touchMapCoordinate.latitude andLongitude:touchMapCoordinate.longitude];
     
 }
 
-- (void)loadNearbyLocationsForLatitude:(float)latitude andLongitude:(float)longitude searchString:(NSString *)searchString {
+- (void)loadNearbyLocationsForLatitude:(float)latitude andLongitude:(float)longitude {
     
     [MSNearbyLocationDataService fetchLocationsDataForLatitude:latitude andLongitude:longitude withCompletion:^(NSArray *locationArray, NSError *error) {
         if (!error) {
@@ -114,7 +114,7 @@
         self.point.coordinate = self.currentLocation.coordinate;
         [self.mapView addAnnotation:self.point];
         self.isCurrentLocation = YES;
-        [self loadNearbyLocationsForLatitude:self.currentLocation.coordinate.latitude andLongitude:self.currentLocation.coordinate.longitude searchString:nil];
+        [self loadNearbyLocationsForLatitude:self.currentLocation.coordinate.latitude andLongitude:self.currentLocation.coordinate.longitude];
     }
 }
 
@@ -224,7 +224,7 @@
             self.point.coordinate = self.currentLocation.coordinate;
             [self.mapView addAnnotation:self.point];
             self.isCurrentLocation = YES;
-            [self loadNearbyLocationsForLatitude:self.currentLocation.coordinate.latitude andLongitude:self.currentLocation.coordinate.longitude searchString:nil];
+            [self loadNearbyLocationsForLatitude:self.currentLocation.coordinate.latitude andLongitude:self.currentLocation.coordinate.longitude];
         }
     }
 }

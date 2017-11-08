@@ -11,8 +11,8 @@
 
 @interface MSLocationViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
-@property (weak, nonatomic) IBOutlet MKMapView *mapView;
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) IBOutlet MKMapView *mapView;
 
 @end
 
